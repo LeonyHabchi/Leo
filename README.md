@@ -121,14 +121,25 @@ The data-bs-ride="carousel" attribute ensures the carousel starts cycling throug
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
+    
+
     *the <div class="carousel-indicators"> section includes three buttons. These buttons act as navigation dots at the bottom of the carousel, allowing users to jump directly to any of the three slides. Each button targets the carousel using data-bs-target="#hero-carousel" and specifies which slide to show using data-bs-slide-to. The first button has the class active, meaning it's selected by default when the page loads.*
+
+
+    
 
     <div class="carousel-inner">
       <div class="carousel-item active c-item">
         <img src="https://static1.simpleflyingimages.com/wordpress/wp-content/uploads/2023/07/2008_las_vegas_n106us_us_airways.jpg" class="d-block w-100 c-img" alt="Slide 1">
         <div class="carousel-caption top-0 mt-4">
+
+
+
         
 *The first slide uses the class active so that it shows initially. The images use Bootstrap classes like d-block and w-100 to ensure they display properly and stretch to the full width. A custom class c-img is also used for styling.*
+
+
+
 
           <p class="mt-5 fs-3 text-uppercase">The Miracle on the Hudson</p>
           <p class="display-1 fw-bolder text-capitalize">US Airways Flight 1549</p>
@@ -161,8 +172,15 @@ The data-bs-ride="carousel" attribute ensures the carousel starts cycling throug
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
 
+
+
+
       *Finally, the carousel includes navigation arrows on the left and right, defined by <button class="carousel-control-prev"> and <button class="carousel-control-next">. 
 These let users manually move through the slides. The span elements inside these buttons hold the arrow icons, and an extra visually-hidden label provides accessibility for screen readers.*
+
+
+
+
 
     </button>
   </div>
@@ -179,6 +197,10 @@ These let users manually move through the slides. The span elements inside these
   object-fit: cover;
   filter: brightness (0.4);
 } 
+
+
+
+
 *These classes are used to customize the bootstrap carousel in CSS.*
 
 
