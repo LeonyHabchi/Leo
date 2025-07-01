@@ -4,16 +4,23 @@ Sem8 - FO
 
 -This website is dedicated to more than just telling the story of Flight 1549. It serves as a tribute to the courage and quick thinking that saved 155 lives, and as a resource to educate visitors about aviation safety, emergency response, and human resilience.
 By understanding the details behind this historic event, we hope to inspire appreciation for the professionals who keep our skies safe, and remind everyone of the power of teamwork and preparedness in crisis situations.
+
+
 -The website consists of 4 pages:
 •	Home
+
 •	Timeline 
+
 •	About
+
 •	Contact
+
 
 -The API I used: NewsAPI.org to fetch current news articles and headlines from many news sources worldwide. 
 •	/v2/top-headlines?country=us — for latest US top headlines
 •	/v2/everything?q=... — for searching news articles by keywords
 API key: 39be7cf6faee42758714115e8de17ec4
+
 
 Each page consists of a navigation bar and footer:
 1.	 Navigation Bar
@@ -173,17 +180,12 @@ The data-bs-ride="carousel" attribute ensures the carousel starts cycling throug
       <span class="visually-hidden">Next</span>
 
 
-
-
-      *Finally, the carousel includes navigation arrows on the left and right, defined by <button class="carousel-control-prev"> and <button class="carousel-control-next">.These let users manually move through the slides. The span elements inside these buttons hold the arrow icons, and an extra visually-hidden label provides accessibility for screen readers.*
-
-
-
-
-
     </button>
   </div>
- 
+
+
+
+ *Finally, the carousel includes navigation arrows on the left and right, defined by <button class="carousel-control-prev"> and <button class="carousel-control-next">.These let users manually move through the slides. The span elements inside these buttons hold the arrow icons, and an extra visually-hidden label provides accessibility for screen readers.*
 
 
 
