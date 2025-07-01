@@ -175,8 +175,7 @@ The data-bs-ride="carousel" attribute ensures the carousel starts cycling throug
 
 
 
-      *Finally, the carousel includes navigation arrows on the left and right, defined by <button class="carousel-control-prev"> and <button class="carousel-control-next">. 
-These let users manually move through the slides. The span elements inside these buttons hold the arrow icons, and an extra visually-hidden label provides accessibility for screen readers.*
+      *Finally, the carousel includes navigation arrows on the left and right, defined by <button class="carousel-control-prev"> and <button class="carousel-control-next">.These let users manually move through the slides. The span elements inside these buttons hold the arrow icons, and an extra visually-hidden label provides accessibility for screen readers.*
 
 
 
