@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="darkmode.js" defer></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <title>About</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo" style="display: flex; align-items: center; gap: 8px;">
+ <h1>Hudson miracle</h1>
+  <i class="fa-solid fa-plane logo-airplane-rotate"></i>
+</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Timeline.html">Timeline</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Credits</a></li>
+    </ul>
+     <button id="theme-switch">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+    </button>
+    <div class="navbar-search">
+  <input id="nav-search-input" type="text" placeholder="Search news articles..." />
+  <button id="nav-search-button">Search</button>
+</div>
+
+  </nav>
+
+
+  
+
+<section id="crew-section">
+  <h2 class="section-heading">Meet The Crew of Flight 1549</h2>
+  <div class="crew-container">
+    <div class="crew-member">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.bIFLwGJTsPimaYE7GCn3dAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Captain Sullenberger">
+      <h3>Captain Chesley “Sully” Sullenberger</h3>
+      <p>Veteran pilot with 40+ years of experience, known for his calm leadership and decisive action during the emergency water landing on the Hudson River.</p>
+    </div>
+    <div class="crew-member">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.wO4DYoDmWIo1qyBBZm71FQHaLG?rs=1&pid=ImgDetMain&o=7&rm=3" alt="First Officer Skiles">
+      <h3>First Officer Jeffrey Skiles</h3>
+      <p>First Officer on his first Airbus A320 flight; worked closely with Sully in the cockpit during the crisis and played a crucial role in handling the controls.</p>
+    </div>
+    <div class="crew-member">
+      <img src="https://media.gettyimages.com/id/85016301/photo/flight-attendant-sheila-dail-talks-about-her-experience-aboard-us-airways-flight-1549-during-a.jpg?s=612x612&w=gi&k=20&c=WjEdTfptAoe5XQg2hj5fZUjtc6uWlSLesRoaIztEoxw=" alt="Sheila Dail">
+      <h3>Sheila Dail</h3>
+      <p>Flight Attendant. Helped manage cabin safety and kept passengers calm throughout the emergency.</p>
+    </div>
+    <div class="crew-member">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.2CZuAoN_3uRHPmwmojqPFgHaKF?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Donna Dent">
+      <h3>Donna Dent</h3>
+      <p>Flight Attendant. Played a key role in organizing the evacuation and assisting passengers on the wing of the plane.</p>
+    </div>
+    <div class="crew-member">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.lMKGRV0wAlqD9MCxU-OzTAHaKR?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Doreen Welsh">
+      <h3>Doreen Welsh</h3>
+      <p>Flight Attendant. Despite suffering an injury, she assisted with evacuation efforts in the flooded rear cabin.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="api-news">
+  <h2 class="news-heading">Top Headlines</h2>
+  <div id="api-news-container" class="news-container"></div>
+</section>
+
+<script>
+  const API_KEY = "39be7cf6faee42758714115e8de17ec4";
+  const NEWS_URL = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
+
+  async function fetchNews() {
+    try {
+      const res = await fetch(NEWS_URL);
+      const data = await res.json();
+      const container = document.getElementById("api-news-container");
+      container.innerHTML = ""; 
+
+      if (data.articles && data.articles.length) {
+        data.articles.slice(0, 6).forEach(article => {
+          const newsEl = document.createElement("div");
+          newsEl.classList.add("news-item");
+
+          newsEl.innerHTML = `
+            <h3>${article.title}</h3>
+            <p>${article.description || "No description available."}</p>
+            <a href="${article.url}" target="_blank">Read more</a>
+          `;
+          container.appendChild(newsEl);
+        });
+      } else {
+        container.innerHTML = "<p>No news available.</p>";
+      }
+    } catch (error) {
+      console.error("Failed to load news:", error);
+      document.getElementById("api-news-container").innerHTML = "<p>Error loading news.</p>";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", fetchNews);
+</script>
+
+
+<section id="search-results" style="display:none; padding:1rem; margin-top:2rem;">
+  <h2>Search Results</h2>
+  <div class="results-grid" id="results-grid" style="
+    display:grid; 
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); 
+    gap:1.25rem;">
+  </div>
+</section>
+<script>
+  const SEARCH_URL = `https://newsapi.org/v2/everything?apiKey=${API_KEY}&pageSize=12&q=`;
+
+  const searchInput = document.getElementById("nav-search-input");
+  const searchButton = document.getElementById("nav-search-button");
+  const resultsSection = document.getElementById("search-results");
+  const resultsGrid = document.getElementById("results-grid");
+
+  async function searchNews(query) {
+    if (!query) {
+      alert("Please enter a search term.");
+      return;
+    }
+    resultsGrid.innerHTML = "<p>Loading...</p>";
+    resultsSection.style.display = "block";
+
+    try {
+      const response = await fetch(SEARCH_URL + encodeURIComponent(query));
+      const data = await response.json();
+
+      if (data.articles && data.articles.length > 0) {
+        displayArticles(data.articles);
+      } else {
+        resultsGrid.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+      }
+    } catch (error) {
+      console.error("Error fetching search results:", error);
+      resultsGrid.innerHTML = "<p>Error loading results. Please try again later.</p>";
+    }
+  }
+
+  function displayArticles(articles) {
+    resultsGrid.innerHTML = ""; 
+
+    articles.forEach(article => {
+      const card = document.createElement("div");
+      card.className = "result-card";
+
+      card.innerHTML = `
+        <h3>${article.title}</h3>
+        <p>${article.description ? article.description : "No description available."}</p>
+        <a href="${article.url}" target="_blank" rel="noopener noreferrer">Read more</a>
+      `;
+
+      resultsGrid.appendChild(card);
+    });
+  }
+
+  function handleSearch() {
+    const query = searchInput.value.trim();
+    searchNews(query);
+  }
+
+  searchButton.addEventListener("click", handleSearch);
+  searchInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleSearch();
+    }
+  });
+  async function searchNews(query) {
+  if (!query) {
+    alert("Please enter a search term.");
+    return;
+  }
+  resultsGrid.innerHTML = "<p>Loading...</p>";
+  resultsSection.style.display = "block";
+
+  try {
+    const response = await fetch(SEARCH_URL + encodeURIComponent(query));
+    const data = await response.json();
+
+    if (data.articles && data.articles.length > 0) {
+      displayArticles(data.articles);
+
+     
+      resultsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    } else {
+      resultsGrid.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+
+     
+      resultsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  } catch (error) {
+    console.error("Error fetching search results:", error);
+    resultsGrid.innerHTML = "<p>Error loading results. Please try again later.</p>";
+    resultsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+</script>
+
+
+
+  
+ <footer>
+  <div class="footerContainer">
+    <div class="footerIntro text-center">
+      <p>"A true miracle is not the flight, but the landing." <br> Inspired by Flight 1549</p>
+    </div>
+    
+    <div class="socialIcons text-center">
+      <a href="https://www.facebook.com/share/16S9uiaArc/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/miracleonthehudson?igsh=MTJnZWNnZDU0d281MA=="><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <div class="footerNav text-center">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="contact.html">Credits</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footerBottom text-center">
+    <p>&copy; 2025 | Designed by <span class="designer">Leonie</span></p>
+  </div>
+</footer>
+</body>
+</html>
