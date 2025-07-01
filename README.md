@@ -109,8 +109,12 @@ The custom UI requirement implemented is a 3D transformed airplane logo with hov
 
  
  
-  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">    *This tells Bootstrap to initialize a sliding carousel.
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">    
+   
+   *This tells Bootstrap to initialize a sliding carousel.
 The data-bs-ride="carousel" attribute ensures the carousel starts cycling through slides automatically when the page loads.*
+
+   
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
